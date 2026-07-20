@@ -316,9 +316,9 @@ Website Design & Development
 
 Homa Bay, Kenya
 
-Email: your-email@example.com
+Email: ochiengvicky21@gmail.com
 
-Website: https://yourwebsite.com
+Website: https://victorochieng.netlify.app
 
 ---
 
