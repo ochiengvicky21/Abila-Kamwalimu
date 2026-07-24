@@ -394,3 +394,34 @@ console.log("%cAbila Kamwalimu Restaurant",
 
 console.log("%cWebsite Designed by Kijani Systems",
   "color:#1B4332;font-size:14px;");
+  /*==============================
+SCROLL REVEAL
+==============================*/
+
+const reveals = document.querySelectorAll(
+  
+  ".reveal,.fade-left,.fade-right,.zoom,.rotate"
+  
+);
+
+function reveal() {
+  
+  reveals.forEach(el => {
+    
+    const top = el.getBoundingClientRect().top;
+    
+    const visible = window.innerHeight - 100;
+    
+    if (top < visible) {
+      
+      el.classList.add("active");
+      
+    }
+    
+  });
+  
+}
+
+window.addEventListener("scroll", reveal);
+
+reveal();

@@ -960,6 +960,7 @@ without leaving the website.
 
 </p>
 
+
 </div>
 
 <div class="pdf-wrapper"><div class="pdf-wrapper">
@@ -1019,8 +1020,34 @@ without leaving the website.
     </div>
 
     <div id="pdf-container">
+        <section class="pdf-viewer">
 
-        <canvas id="pdf-render"></canvas>
+<div class="container">
+
+<h2>Our Full Menu</h2>
+
+<p>
+Browse our complete menu below.
+</p>
+
+<iframe
+
+src="assets/menu/pdf/menu.pdf"
+
+width="100%"
+
+height="900"
+
+style="border:none;">
+
+</iframe>
+
+</div>
+
+</section>
+
+      <!--  <canvas id="pdf-render"></canvas>-->
+        
 
     </div>
 
@@ -1084,7 +1111,7 @@ WhatsApp Us
 pdfjsLib.GlobalWorkerOptions.workerSrc =
 "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.5.136/pdf.worker.min.js";
 
-const url="assets/menu/abila-menu.pdf";
+const url="assets/menu/pdf/menu.pdf";
 
 let pdfDoc=null;
 
