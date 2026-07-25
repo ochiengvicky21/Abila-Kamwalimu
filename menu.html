@@ -607,7 +607,7 @@ Some of the meals loved most by our customers.
 
     <div class="food-image">
 
-        <img src="/images/menu/5.jpg"
+        <img src="images/menu/5.jpg"
         alt="Beef Stew">
 
     </div>
@@ -1030,7 +1030,7 @@ without leaving the website.
 Browse our complete menu below.
 </p>
 
-<iframe
+<!--<iframe
 
 src="assets/menu/pdf/menu.pdf"
 
@@ -1040,13 +1040,14 @@ height="900"
 
 style="border:none;">
 
-</iframe>
+</iframe>-->
 
 </div>
 
 </section>
+<div id="pdf-container">
 
-      <!--  <canvas id="pdf-render"></canvas>-->
+       <canvas id="pdf-render"></canvas>
         
 
     </div>
@@ -1127,7 +1128,7 @@ function renderPage(num){
 
 pdfDoc.getPage(num).then(page=>{
 
-constconst viewport=page.getViewport({scale:scale});
+const viewport=page.getViewport({scale:scale});
 
 canvas.height=viewport.height;
 
@@ -1141,9 +1142,8 @@ viewport:viewport
 
 };
 
-page.render(renderContext);
-
-document.getElementById("page-num").textContent=num;
+page.render(renderContext).promise.then(())=>{consolw.log("page rendered"};
+)
 
 });
 
