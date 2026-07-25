@@ -732,7 +732,7 @@ Some of the meals loved most by our customers.
 
             <h3>
 
-                English Breakfast
+                Traditional breakfast
 
             </h3>
 
@@ -745,9 +745,8 @@ Some of the meals loved most by our customers.
         </div>
 
         <p>
-
-            Eggs, sausage, toast,
-            baked beans and tea.
+            We offer upon request none processed food option for our traditional breakfast. <br>
+            Arrow roots, sweet potatoe, Tea; Black/White, 
 
         </p>
 
@@ -802,7 +801,7 @@ One of the restaurant's most popular meals.
 
 <div class="chef-price">
 
-KSh 950
+KSh 550
 
 </div>
 
@@ -963,7 +962,7 @@ without leaving the website.
 
 </div>
 
-<div class="pdf-wrapper"><div class="pdf-wrapper">
+<div class="pdf-wrapper">
 
     <div class="pdf-toolbar">
 
@@ -1019,10 +1018,10 @@ without leaving the website.
 
     </div>
 
-    <div id="pdf-container">
+    <!--<div id="pdf-container">
         <section class="pdf-viewer">
 
-<div class="container">
+<div class="container">-->
 
 <h2>Our Full Menu</h2>
 
@@ -1142,22 +1141,28 @@ viewport:viewport
 
 };
 
-page.render(renderContext).promise.then(())=>{consolw.log("page rendered"};
-)
-
+page.render(renderContext).promise.then(() => {
+    console.log("Page rendered");
 });
-
+});
 }
 
-pdfjsLib.getDocument(url).promise.then(pdf=>{
-
-pdfDoc=pdf;
-
-document.getElementById("page-count").textContent=pdf.numPages;
-
-renderPage(pageNum);
-
-});
+pdfjsLib.getDocument(url).promise
+    .then(pdf => {
+        
+        pdfDoc = pdf;
+        
+        document.getElementById("page-count").textContent = pdf.numPages;
+        
+        renderPage(pageNum);
+        
+    })
+    .catch(err => {
+        
+        console.error("PDF failed to load:", err);
+        
+    });
+   
 
 document.getElementById("next-page").addEventListener("click",()=>{
 
@@ -1199,7 +1204,7 @@ renderPage(pageNum);
 
 document.getElementById("fullscreen").addEventListener("click",()=>{
 
-const container=document.getElementById("pdf-container");
+const canvas = document.getElementById("pdf-render");
 
 if(container.requestFullscreen){
 

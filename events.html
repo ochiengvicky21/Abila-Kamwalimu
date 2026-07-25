@@ -215,6 +215,7 @@ and other memorable occasions.
 
 </section>
 
+
 <!-- ================= INTRO ================= -->
 
 <section class="section">
@@ -430,6 +431,181 @@ over freshly prepared meals.
 </div>
 
 </section>
+<section class="conference-section">
+    
+    <div class="container">
+        
+        <div class="section-header">
+            
+            <span>Business & Meetings</span>
+            
+            <h2>Conference Facilities</h2>
+            
+            <p>
+                Host productive meetings, workshops, seminars, trainings and corporate events in our comfortable conference facilities.
+            </p>
+            
+        </div>
+        
+        <div class="conference-grid">
+            
+            <div class="conference-card">
+                <i class="fas fa-video"></i>
+                <h3>Projector</h3>
+                <p>High-quality projector for presentations and training sessions.</p>
+            </div>
+            
+            <div class="conference-card">
+                <i class="fas fa-chalkboard"></i>
+                <h3>Whiteboard</h3>
+                <p>Large whiteboard with markers for brainstorming and teaching.</p>
+            </div>
+            
+            <div class="conference-card">
+                <i class="fas fa-pencil-ruler"></i>
+                <h3>Stationery</h3>
+                <p>Writing pads, pens, flip charts and meeting stationery available on request.</p>
+            </div>
+            
+            <div class="conference-card">
+                <i class="fas fa-wifi"></i>
+                <h3>Wi-Fi</h3>
+                <p>Reliable internet connection for meetings and virtual presentations.</p>
+            </div>
+            
+        </div>
+        
+        <div class="conference-action">
+            
+            <a href="#conference-booking" class="btn">
+                Book Conference
+            </a>
+            
+        </div>
+        
+    </div>
+    
+</section>
+<section id="conference-booking" class="conference-booking">
+
+<div class="container">
+
+<div class="section-header">
+
+<h2>Conference Booking</h2>
+
+<p>
+Tell us what you need and we'll prepare a quotation.
+</p>
+
+</div>
+
+<form id="conferenceForm">
+
+<div class="form-grid">
+
+<input
+type="text"
+id="name"
+placeholder="Full Name"
+required>
+
+<input
+type="tel"
+id="phone"
+placeholder="Phone Number"
+required>
+
+<input
+type="text"
+id="organization"
+placeholder="Organization">
+
+<input
+type="date"
+id="date"
+required>
+
+<input
+type="number"
+id="guests"
+placeholder="Expected Participants">
+
+<select id="facility">
+
+<option value="">
+Conference Hall Size
+</option>
+
+<option>
+Small Meeting Room
+</option>
+
+<option>
+Medium Conference Hall
+</option>
+
+<option>
+Large Conference Hall
+</option>
+
+</select>
+
+</div>
+
+<h3>Facilities Required</h3>
+
+<label>
+<input type="checkbox" value="Projector">
+Projector
+</label>
+
+<label>
+<input type="checkbox" name="Whiteboard" value="Whiteboard">
+Whiteboard
+</label>
+
+<label>
+<input type="checkbox" name="Stationery" value="Stationery">
+Stationery
+</label>
+
+<label>
+<input type="checkbox" name="Wi-Fi" value="Wi-Fi">
+Wi-Fi
+</label>
+
+<label>
+<input type="checkbox" name="Tea Break" value="Tea Break">
+Tea Break
+</label>
+
+<label>
+<input type="checkbox" name="Lunch" value="Lunch">
+Lunch
+</label>
+
+<label>
+<input type="checkbox"name="Breakfast"value="Breakfast">
+Breakfast
+</label>
+
+<textarea
+id="notes"
+placeholder="Additional requirements"></textarea>
+
+<button
+type="submit"
+class="btn">
+Request Quotation
+</button>
+
+</form>
+
+</div>
+
+</section>
+
 <!-- ================= WHY HOST WITH US ================= -->
 
 <section class="section">
@@ -710,6 +886,7 @@ target="_blank">
 </a>
 
 <script src="js/app.js"></script>
+<script src="js/booking.js"></script>
 
 </body>
 
