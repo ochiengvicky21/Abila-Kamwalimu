@@ -8,18 +8,7 @@
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>
-Menu | Abila Kamwalimu Hotel
-</title>
-
-<meta name="description"
-content="Explore the delicious meals served at Abila Kamwalimu Hotel, Homa Bay.">
-
-<meta name="keywords"
-content="Restaurant, Homa Bay, Fish, Ugali, Breakfast, Lunch, Dinner, Menu">
-
-<meta name="author"
-content="Kijani Systems">
+<title>Menu | Abila Kamwalimu Hotel</title>
 
 <link rel="preconnect"
 href="https://fonts.googleapis.com">
@@ -28,20 +17,19 @@ href="https://fonts.googleapis.com">
 href="https://fonts.gstatic.com"
 crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
 rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 <link rel="stylesheet"
 href="css/style.css">
+<link rel="stylesheet" href="css/menu.css" />
 
 </head>
 
 <body>
-
-<!--================ PRELOADER =================-->
 
 <div id="preloader">
 
@@ -49,26 +37,19 @@ href="css/style.css">
 
 </div>
 
-<!--================ HEADER =================-->
-
 <header id="header">
 
 <div class="container navbar">
 
 <div class="logo">
 
-<a href="index.html">
-
-<img src="images/logo/logo.png"
-alt="Abila Kamwalimu">
-
-</a>
+<img src="images/logo/logo.png">
 
 <div class="logo-text">
 
 <h2>Abila</h2>
 
-<span>Kamwalimu Hotel</span>
+<span>Kamwalimu</span>
 
 </div>
 
@@ -77,30 +58,18 @@ alt="Abila Kamwalimu">
 <nav>
 
 <ul>
-    <li>
-        <a href="index.html">Home</a>
-    </li>
 
-<li>
-    <a href="about.html">About</a>
-</li>
+<li><a href="index.html">Home</a></li>
 
-<li>
-    <a class="active"
-  href="menu.html">Menu</a>
-</li>
+<li><a class="active" href="menu.html">Menu</a></li>
 
-<li>
-    <a href="gallery.html">Gallery</a>
-</li>
+<li><a href="about.html">About</a></li>
 
-<li>
- <a href="events.html">Events</a>
-</li>
+<li><a href="gallery.html">Gallery</a></li>
 
-<li>
-  <a href="contact.html">Contact</a>
-</li>
+<li><a href="events.html">Events</a></li>
+
+<li><a href="contact.html">Contact</a></li>
 
 </ul>
 
@@ -109,14 +78,14 @@ alt="Abila Kamwalimu">
 <a href="contact.html"
 class="header-btn">
 
-Visit Hotel
+Visit Us
 
 </a>
 
 <div class="menu-toggle">
-
-<i class="fas fa-bars"></i>
-
+    
+    <i class="fas fa-bars"></i>
+    
 </div>
 
 </div>
@@ -150,7 +119,7 @@ Visit Hotel
             
         </li>
         
-      <!--  <li>
+         <li>
             
             <a href="menu.html">
             
@@ -158,7 +127,7 @@ Visit Hotel
                 
             </a>
             
-        </li>-->
+        </li>
         
         <li>
             
@@ -195,60 +164,33 @@ Visit Hotel
 </div>
 </header>
 
-<!--================ MENU HERO =================-->
-
-<!--<section class="menu-hero">-->
-    <section class="hero" style="height:90vh;background:url(images/gallery/banner.jpg) center/cover;">
-
-<div class="hero-overlay"></div>
+<section class="hero" style="height:100vh;
+background:url(images/menu/banner.jpg) center/cover;">
 
 <div class="container">
 
-<div class="menu-hero-content">
+<div class="hero-content">
 
-<span>
+<div class="hero-badge">
 
-Authentic Kenyan Cuisine
+<i class="fas fa-heart"></i>
 
-</span>
-
-<h1>
-
-Our Delicious
-
-<strong>
-
-Restaurant Menu
-
-</strong>
-
-</h1>
-
-<p>
-
-Freshly prepared meals, local favourites,
-refreshing beverages and delicious snacks
-served every day.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#featured-menu"
-class="btn">
-
-Explore Menu
-
-</a>
-
-<a href="#official-menu"
-class="btn btn-outline">
-
-View Official Menu
-
-</a>
+Our Menu
 
 </div>
+<!-- Hero -->
+
+<!--<section class="menu-hero">
+
+<div class="overlay">
+
+<div class="hero-content">-->
+
+<h1>Quality Meals</h1>
+
+<p>
+Freshly prepared meals made with quality ingredients and served with exceptional hospitality.
+</p>
 
 </div>
 
@@ -256,501 +198,263 @@ View Official Menu
 
 </section>
 
-<!--================ QUICK STATS =================-->
+<!-- Filter Buttons -->
 
-<section class="menu-stats">
-
-<div class="container">
-
-<div class="stats-grid">
-
-<div class="stat-card">
-
-<i class="fas fa-utensils"></i>
-
-<h2>
-
-100+
-
-</h2>
-
-<p>
-
-Meals Served
-
-</p>
-
-</div>
-
-<div class="stat-card">
-
-<i class="fas fa-fish"></i>
-
-<h2>
-
-Fresh
-
-</h2>
-
-<p>
-
-Lake Victoria Fish
-
-</p>
-
-</div>
-
-<div class="stat-card">
-
-<i class="fas fa-star"></i>
-
-<h2>
-
-4.1★
-
-</h2>
-
-<p>
-
-Google Rating
-
-</p>
-
-</div>
-
-<div class="stat-card">
-
-<i class="fas fa-location-dot"></i>
-
-<h2>
-
-Homa Bay
-
-</h2>
-
-<p>
-
-Prime Location
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!--================ CATEGORY NAVIGATION =================-->
-
-<section class="menu-categories">
+<section class="menu-filter">
 
 <div class="container">
 
-<div class="section-header">
+<button class="filter-btn active" data-filter="all">All</button>
 
-<span>
+<button class="filter-btn" data-filter="nyama">
+Nyama Choma
+</button>
 
-Browse Categories
-
-</span>
-
-<h2>
-
-Find Your Favourite Meal
-
-</h2>
-
-<p>
-
-Browse our delicious offerings by category.
-
-</p>
-
-</div>
-
-<div class="category-grid">
-
-<a href="#breakfast"
-class="category-card">
-
-<i class="fas fa-mug-hot"></i>
-
-<h3>
-
-Breakfast
-
-</h3>
-
-</a>
-
-<a href="#fish"
-class="category-card">
-
-<i class="fas fa-fish"></i>
-
-<h3>
-
+<button class="filter-btn" data-filter="fish">
 Fish
+</button>
 
-</h3>
-
-</a>
-
-<a href="#chicken"
-class="category-card">
-
-<i class="fas fa-drumstick-bite"></i>
-
-<h3>
-
+<button class="filter-btn" data-filter="chicken">
 Chicken
+</button>
 
-</h3>
+<button class="filter-btn" data-filter="traditional">
+Traditional Meals
+</button>
 
-</a>
+<button class="filter-btn" data-filter="juice">
+Juices
+</button>
 
-<a href="#beef"
-class="category-card">
-
-<i class="fas fa-bowl-food"></i>
-
-<h3>
-
-Beef
-
-</h3>
-
-</a>
-
-<a href="#traditional"
-class="category-card">
-
-<i class="fas fa-pepper-hot"></i>
-
-<h3>
-
-Traditional
-
-</h3>
-
-</a>
-
-<a href="#drinks"
-class="category-card">
-
-<i class="fas fa-wine-glass"></i>
-
-<h3>
-
-Drinks
-
-</h3>
-
-</a>
-
-<a href="#snacks"
-class="category-card">
-
-<i class="fas fa-burger"></i>
-
-<h3>
-
+<button class="filter-btn" data-filter="snacks">
 Snacks
-
-</h3>
-
-</a>
-
-<a href="#official-menu"
-class="category-card">
-
-<i class="fas fa-file-pdf"></i>
-
-<h3>
-
-Full Menu
-
-</h3>
-
-</a>
-
-</div>
+</button>
 
 </div>
 
 </section>
 
-<!--================ FEATURED DISHES =================-->
+<!-- Menu Items -->
 
-<section
-id="featured-menu"
-class="section">
+<section class="menu-items">
 
 <div class="container">
 
-<div class="section-header">
+<!-- Nyama Choma -->
 
-<span>
+<div class="menu-card nyama">
 
-Chef's Selection
+<img src="images/nyama.jpg" alt="Nyama Choma">
 
-</span>
+<div class="details">
 
-<h2>
+<h3>Nyama Choma</h3>
 
-Customer Favourites
+<p>Slow roasted goat or beef served with Kachumbari and Ugali.</p>
 
-</h2>
-
-<p>
-
-Some of the meals loved most by our customers.
-
-</p>
+<span>KSh 350</span>
 
 </div>
 
-<div class="featured-menu-grid">
-    <!--================ FEATURED DISHES =================-->
+</div>
 
-<div class="food-card">
+<div class="menu-card nyama">
 
-    <div class="food-image">
+<img src="images/menu/local.jpg">
 
-        <img src="images/menu/fish.jpg"
-        alt="Whole Fried Tilapia">
+<div class="details">
 
-        <span class="badge">
+<h3>Mbuzi Fry</h3>
 
-            Best Seller
+<p>Tender goat meat cooked with traditional spices.</p>
 
-        </span>
-
-    </div>
-
-    <div class="food-content">
-
-        <div class="food-header">
-
-            <h3>
-
-                Whole Fried Tilapia
-
-            </h3>
-
-            <span class="price">
-
-                KSh 800
-
-            </span>
-
-        </div>
-
-        <p>
-
-            Fresh Lake Victoria tilapia served with
-            ugali or fries and traditional vegetables.
-
-        </p>
-
-    </div>
+<span>KSh 400</span>
 
 </div>
 
-<div class="food-card">
+</div>
 
-    <div class="food-image">
+<!-- Fish -->
 
-        <img src="images/menu/chicken.jpg"
-        alt="Chicken Stew">
+<div class="menu-card fish">
 
-        <span class="badge">
+<img src="images/menu/fish.jpg">
 
-            Popular
+<div class="details">
 
-        </span>
+<h3>Whole Fried Tilapia</h3>
 
-    </div>
+<p>Fresh Lake Victoria Tilapia served with Ugali.</p>
 
-    <div class="food-content">
-
-        <div class="food-header">
-
-            <h3>
-
-                Chicken Stew
-
-            </h3>
-
-            <span class="price">
-
-                KSh 650
-
-            </span>
-
-        </div>
-
-        <p>
-
-            Tender chicken served with ugali,
-            rice or chapati.
-
-        </p>
-
-    </div>
+<span>KSh 800</span>
 
 </div>
 
-<div class="food-card">
+</div>
 
-    <div class="food-image">
+<div class="menu-card fish">
 
-        <img src="images/menu/5.jpg"
-        alt="Beef Stew">
+<img src="images/fish.jpg">
 
-    </div>
+<div class="details">
 
-    <div class="food-content">
+<h3>Boiled Fish</h3>
 
-        <div class="food-header">
+<p>Traditional Luo style boiled fish.</p>
 
-            <h3>
-
-                Beef Stew
-
-            </h3>
-
-            <span class="price">
-
-                KSh 600
-
-            </span>
-
-        </div>
-
-        <p>
-
-            Slow-cooked beef prepared with
-            rich Kenyan spices.
-
-        </p>
-
-    </div>
+<span>KSh 850</span>
 
 </div>
 
-<div class="food-card">
+</div>
 
-    <div class="food-image">
+<!-- Chicken -->
 
-        <img src="images/menu/pilau.jpg"
-        alt="Pilau">
+<div class="menu-card chicken">
 
-    </div>
+<img src="images/menu/chicken.jpg">
 
-    <div class="food-content">
+<div class="details">
 
-        <div class="food-header">
+<h3>Chicken Fry</h3>
 
-            <h3>
+<p>Golden fried chicken served with chips.</p>
 
-                Pilau
-
-            </h3>
-
-            <span class="price">
-
-                KSh 450
-
-            </span>
-
-        </div>
-
-        <p>
-
-            Fragrant spiced rice served with
-            kachumbari and vegetables.
-
-        </p>
-
-    </div>
+<span>KSh 350</span>
 
 </div>
 
-<div class="food-card">
+</div>
 
-    <div class="food-image">
+<div class="menu-card chicken">
 
-        <img src="images/menu/local.jpg"
-        alt="Goat Fry">
+<img src="images/chicken.jpg">
 
-    </div>
+<div class="details">
 
-    <div class="food-content">
+<h3>Wet Fry Chicken</h3>
 
-        <div class="food-header">
+<p>Chicken cooked in rich tomato gravy.</p>
 
-            <h3>
-
-                Goat Wet Fry
-
-            </h3>
-
-            <span class="price">
-
-                KSh 750
-
-            </span>
-
-        </div>
-
-        <p>
-
-            Soft goat meat cooked in
-            traditional Kenyan style.
-
-        </p>
-
-    </div>
+<span>KSh 400</span>
 
 </div>
 
-<div class="food-card">
+</div>
 
-    <div class="food-image">
+<!-- Traditional -->
 
-        <img src="images/menu/breakfast.jpg"
-        alt="Breakfast">
+<div class="menu-card traditional">
 
-    </div>
+<img src="images/ugali.jpg">
 
-    <div class="food-content">
+<div class="details">
 
-        <div class="food-header">
+<h3>Ugali & Mboga Kienyeji</h3>
 
-            <h3>
+<p>A classic Kenyan favourite.</p>
 
-                Traditional breakfast
+<span>KSh 150</span>
 
-            </h3>
+</div>
 
-            <span class="price">
+</div>
 
-                KSh 450
+<div class="menu-card traditional">
 
-            </span>
+<img src="images/menu/beef.jpg">
 
-        </div>
+<div class="details">
 
-        <p>
-            We offer upon request none processed food option for our traditional breakfast. <br>
-            Arrow roots, sweet potatoe, Tea; Black/White, 
+<h3>Ugali + Stew</h3>
 
-        </p>
+<p>Traditional home-style beef stew.</p>
 
-    </div>
+<span>KSh 200</span>
+
+</div>
+
+</div>
+
+<!-- Juice -->
+
+<div class="menu-card juice">
+
+<img src="images/menu/juice.jpg">
+
+<div class="details">
+
+<h3>Mango Juice</h3>
+
+<p>Freshly blended.</p>
+
+<span>KSh 100</span>
+
+</div>
+
+</div>
+
+<div class="menu-card juice">
+
+<img src="images/menu/juice.jpg">
+
+<div class="details">
+
+<h3>Passion Juice</h3>
+
+<p>Fresh tropical flavour.</p>
+
+<span>KSh 100</span>
+
+</div>
+
+</div>
+
+<div class="menu-card juice">
+
+<img src="images/menu/juice.jpg">
+
+<div class="details">
+
+<h3>Mixed Fruit Juice</h3>
+
+<p>Mango, Pineapple & Passion.</p>
+
+<span>KSh 150</span>
+
+</div>
+
+</div>
+
+<!-- Cakes -->
+
+<div class="menu-card snacks">
+
+<img src="images/cake.jpg">
+
+<div class="details">
+
+<h3>Bhajia</h3>
+
+<p>Enjoy flavourful fried potatoe wedges  prepared by our chefs.</p>
+
+<span>From KSh 100</span>
+
+</div>
+
+</div>
+
+<div class="menu-card snacks">
+
+<img src="images/cake.jpg">
+
+<div class="details">
+
+<h3>Mtura</h3>
+
+<p>A popular Kenyan street food served with Kachumbari</p>
+
+<span>KSh 100</span>
 
 </div>
 
@@ -760,619 +464,223 @@ Some of the meals loved most by our customers.
 
 </section>
 
-<!--================ CHEF RECOMMENDATION =================-->
+<!-- Chef's Specials -->
 
-<section class="chef-special">
+<section class="specials">
 
 <div class="container">
 
-<div class="chef-grid">
+<h2>Chef's Recommendations</h2>
 
-<div class="chef-image">
+<div class="cards">
 
-<img src="images/menu/ugali-fish.jpg"
-alt="Chef Special">
+<div class="special-card">
 
-</div>
-
-<div class="chef-content">
-
-<span>
-
-Chef's Recommendation
-
-</span>
-
-<h2>
-
-Whole Tilapia Fish
-
-</h2>
+<h3>Boiled Tilapia</h3>
 
 <p>
-
-Prepared using freshly sourced fish from
-Lake Victoria, seasoned with carefully selected
-spices and served with ugali, fries or rice.
-
-One of the restaurant's most popular meals.
-
+Lake Victoria Whole Tilapia,prepared with carefully selected ingredients and brought to a boil on slow-low heat.Served with Ugali, Greens and Fresh Juice.
 </p>
 
-<div class="chef-price">
-
-KSh 550
+<h4>KSh 800</h4>
 
 </div>
 
-<a href="#official-menu"
-class="btn">
+<div class="special-card">
 
-Browse Full Menu
+<h3>Platter for 2</h3>
 
+<p>
+Nyama Choma, Chicken, Fries, Chapati/Rice/Ugali and Salad.
+</p>
+
+<h4>KSh 1,200</h4>
+
+</div>
+
+<div class="special-card">
+
+<h3>Platter for 4</h3>
+
+<p>
+Fish, Chicken, Goat Meat, Juice and Dessert.
+</p>
+
+<h4>KSh 2,500</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Reserve Your Table Today</h2>
+
+<p>
+Experience unforgettable dining with family and friends.
+</p>
+
+<a href="contact.html" class="btn">
+Book a Table
 </a>
 
-</div>
-
-</div>
-
-</div>
-
 </section>
-
-<!--================ MENU INFORMATION =================-->
-
-<section class="section">
-
-<div class="container">
-
-<div class="section-header">
-
-<span>
-
-Menu Information
-
-</span>
-
-<h2>
-
-Fresh Meals Prepared Daily
-
-</h2>
-
-<p>
-
-Prices are subject to change.
-For the latest pricing and complete menu,
-please refer to the official restaurant menu below.
-
-</p>
-
-</div>
-
-<div class="info-grid">
-
-<div class="info-card">
-
-<i class="fas fa-clock"></i>
-
-<h3>
-
-Fresh Daily
-
-</h3>
-
-<p>
-
-Meals are freshly prepared every day.
-
-</p>
-
-</div>
-
-<div class="info-card">
-
-<i class="fas fa-fish"></i>
-
-<h3>
-
-Fresh Fish
-
-</h3>
-
-<p>
-
-Lake Victoria fish served daily.
-
-</p>
-
-</div>
-
-<div class="info-card">
-
-<i class="fas fa-leaf"></i>
-
-<h3>
-
-Quality Ingredients
-
-</h3>
-
-<p>
-
-Prepared using fresh locally sourced ingredients.
-
-</p>
-
-</div>
-
-<div class="info-card">
-
-<i class="fas fa-file-pdf"></i>
-
-<h3>
-
-Official Menu
-
-</h3>
-
-<p>
-
-View the complete restaurant menu below.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!--================ OFFICIAL MENU PDF =================-->
-
-<section
-id="official-menu"
-class="menu-pdf-section">
-
-<div class="container">
-
-<div class="section-header">
-
-<span>
-
-Official Restaurant Menu
-
-</span>
-
-<h2>
-
-Browse Our Complete Menu
-
-</h2>
-
-<p>
-
-View the official Abila Kamwalimu Restaurant menu
-without leaving the website.
-
-</p>
-
-
-</div>
-
-<div class="pdf-wrapper">
-
-    <div class="pdf-toolbar">
-
-        <div class="toolbar-left">
-
-            <button id="prev-page" class="pdf-btn">
-
-                <i class="fas fa-chevron-left"></i>
-
-            </button>
-
-            <span>
-
-                Page
-
-                <span id="page-num">1</span>
-
-                of
-
-                <span id="page-count">--</span>
-
-            </span>
-
-            <button id="next-page" class="pdf-btn">
-
-                <i class="fas fa-chevron-right"></i>
-
-            </button>
-
-        </div>
-
-        <div class="toolbar-right">
-
-            <button id="zoom-out" class="pdf-btn">
-
-                <i class="fas fa-search-minus"></i>
-
-            </button>
-
-            <button id="zoom-in" class="pdf-btn">
-
-                <i class="fas fa-search-plus"></i>
-
-            </button>
-
-            <button id="fullscreen" class="pdf-btn">
-
-                <i class="fas fa-expand"></i>
-
-            </button>
-
-        </div>
-
-    </div>
-
-    <!--<div id="pdf-container">
-        <section class="pdf-viewer">
-
-<div class="container">-->
-
-<h2>Our Full Menu</h2>
-
-<p>
-Browse our complete menu below.
-</p>
-
-<!--<iframe
-
-src="assets/menu/pdf/menu.pdf"
-
-width="100%"
-
-height="900"
-
-style="border:none;">
-
-</iframe>-->
-
-</div>
-
-</section>
-<div id="pdf-container">
-
-       <canvas id="pdf-render"></canvas>
-        
-
-    </div>
-
-</div>
-
-</div>
-
-</section>
-
-<!--================ CALL TO ACTION =================-->
-
-<section class="menu-cta">
-
-<div class="container">
-
-<div class="cta-card">
-
-<h2>
-
-Can't Decide?
-
-</h2>
-
-<p>
-
-Visit our restaurant and our team will gladly
-recommend today's favourites.
-
-</p>
-
-<div class="cta-buttons">
-
-<a href="contact.html"
-class="btn">
-
-Visit Us
-
-</a>
-
-<a href="https://wa.me/254729288984"
-class="btn btn-outline">
-
-WhatsApp Us
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- PDF.js -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.5.136/pdf.min.js"></script>
-
-<script>
-
-pdfjsLib.GlobalWorkerOptions.workerSrc =
-"https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.5.136/pdf.worker.min.js";
-
-const url="assets/menu/pdf/menu.pdf";
-
-let pdfDoc=null;
-
-let pageNum=1;
-
-let scale=1.4;
-
-const canvas=document.getElementById("pdf-render");
-
-const ctx=canvas.getContext("2d");
-
-function renderPage(num){
-
-pdfDoc.getPage(num).then(page=>{
-
-const viewport=page.getViewport({scale:scale});
-
-canvas.height=viewport.height;
-
-canvas.width=viewport.width;
-
-const renderContext={
-
-canvasContext:ctx,
-
-viewport:viewport
-
-};
-
-page.render(renderContext).promise.then(() => {
-    console.log("Page rendered");
-});
-});
-}
-
-pdfjsLib.getDocument(url).promise
-    .then(pdf => {
-        
-        pdfDoc = pdf;
-        
-        document.getElementById("page-count").textContent = pdf.numPages;
-        
-        renderPage(pageNum);
-        
-    })
-    .catch(err => {
-        
-        console.error("PDF failed to load:", err);
-        
-    });
-   
-
-document.getElementById("next-page").addEventListener("click",()=>{
-
-if(pageNum>=pdfDoc.numPages) return;
-
-pageNum++;
-
-renderPage(pageNum);
-
-});
-
-document.getElementById("prev-page").addEventListener("click",()=>{
-
-if(pageNum<=1) return;
-
-pageNum--;
-
-renderPage(pageNum);
-
-});
-
-document.getElementById("zoom-in").addEventListener("click",()=>{
-
-scale+=0.2;
-
-renderPage(pageNum);
-
-});
-
-document.getElementById("zoom-out").addEventListener("click",()=>{
-
-if(scale<=0.8) return;
-
-scale-=0.2;
-
-renderPage(pageNum);
-
-});
-
-document.getElementById("fullscreen").addEventListener("click",()=>{
-
-const canvas = document.getElementById("pdf-render");
-
-if(container.requestFullscreen){
-
-container.requestFullscreen();
-
-}else if(container.webkitRequestFullscreen){
-
-container.webkitRequestFullscreen();
-
-}else if(container.msRequestFullscreen){
-
-container.msRequestFullscreen();
-
-}
-
-});
-
-</script>
-
-<!--================ FOOTER =================-->
 
 <footer>
 
-<div class="container">
+    <div class="container">
 
-<div class="footer-grid">
+        <div class="footer-grid">
 
-<div>
+            <div>
 
-<h2 class="footer-logo">
+                <h2 class="footer-logo">
 
-Abila Kamwalimu
+                    Abila Kamwalimu
 
-</h2>
+                </h2>
 
-<p>
+                <p>
 
-Fresh meals.
-Exceptional hospitality.
-Authentic Kenyan cuisine.
+                    Great Food.
+                    Warm Hospitality.
+                    Right Here in Homa Bay.
 
-</p>
+                </p>
 
-</div>
+            </div>
 
-<div>
+            <div>
 
-<h3>
+                <h3 class="footer-title">
 
-Quick Links
+                    Quick Links
 
-</h3>
+                </h3>
 
-<ul class="footer-links">
+                <div class="footer-links">
 
-<li><a href="index.html">Home</a></li>
+                    <a href="index.html">Home</a>
 
-<li><a href="about.html">About</a></li>
+                    <a href="about.html">About</a>
 
-<li><a href="menu.html">Menu</a></li>
+                    <a href="menu.html">Menu</a>
 
-<li><a href="gallery.html">Gallery</a></li>
+                    <a href="gallery.html">Gallery</a>
 
-<li><a href="events.html">Events</a></li>
+                    <a href="events.html">Events</a>
 
-<li><a href="contact.html">Contact</a></li>
+                    <a href="contact.html">Contact</a>
 
-</ul>
+                </div>
 
-</div>
+            </div>
 
-<div>
+            <div>
 
-<h3>
+                <h3 class="footer-title">
 
-Restaurant
+                    Restaurant
 
-</h3>
+                </h3>
 
-<ul class="footer-links">
+                <div class="footer-contact">
 
-<li>Open Daily</li>
+                    <p>
 
-<li>Fresh Meals</li>
+                        <i class="fas fa-location-dot"></i>
 
-<li>Family Friendly</li>
+                        Homa Bay Town
 
-<li>Lake Victoria Cuisine</li>
+                    </p>
 
-</ul>
+                    <p>
 
-</div>
+                        <i class="fas fa-star"></i>
 
-<div>
+                        Google Rating 4.1
 
-<h3>
+                    </p>
 
-Follow Us
+                </div>
 
-</h3>
+            </div>
 
-<div class="footer-social">
+            <div>
 
-<a href="https://www.facebook.com/profile.php?id=61592112063480"><i class="fab fa-facebook-f"></i></a>
+                <h3 class="footer-title">
 
-<a href="#"><i class="fab fa-instagram"></i></a>
+                    Follow Us
 
-<a href="https://tiktok.com/@kamwalimu.hotel"><i class="fab fa-tiktok"></i></a>
+                </h3>
 
-<a href="https://wa.me/254746037441">
+                <div class="footer-social">
 
-<i class="fab fa-whatsapp"></i>
+                    <a href="https://www.facebook.com/profile.php?id=61592112063480"><i class="fab fa-facebook-f"></i></a>
 
-</a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
 
-</div>
+                    <a href="https://tiktok.com/@kamwalimu.hotel"><i class="fab fa-tiktok"></i></a>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-<div class="footer-bottom">
+        </div>
 
-<p>
+        <div class="footer-bottom">
 
-© 2026 Abila Kamwalimu Hotel.
+            <p>
 
-All Rights Reserved.
+                © 2026 Abila Kamwalimu Hotel.
+                All Rights Reserved.
 
-</p>
+            </p>
 
-<p>
+            <p>
 
-Designed by
+                Designed by Kijani Systems
 
-<strong>
+            </p>
 
-Kijani Systems
+        </div>
 
-</strong>
-
-</p>
-
-</div>
-
-</div>
+    </div>
 
 </footer>
 
-<!--================ FLOATING BUTTONS =================-->
+<!-- ================= FLOATING BUTTONS ================= -->
 
 <a href="#"
 class="scroll-top">
 
-<i class="fas fa-arrow-up"></i>
+    <i class="fas fa-arrow-up"></i>
 
 </a>
 
-<a href="https://wa.me/254746037441"
+<!-- Replace with the restaurant's verified WhatsApp number -->
+
+<a href="https://wa.me/254729288984"
 class="whatsapp-btn"
 target="_blank">
 
 <i class="fab fa-whatsapp"></i>
 
 </a>
+<class="whatsapp-btn">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
 
 <script src="js/app.js"></script>
-
+<script src="js/menu.js"></script>
 </body>
 
 </html>

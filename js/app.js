@@ -425,3 +425,50 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 reveal();
+/*=========================================
+CONTACT FORM → WHATSAPP
+=========================================*/
+
+const form = document.querySelector("#contact-form");
+
+if (form) {
+  
+  form.addEventListener("submit", function(e) {
+    
+    e.preventDefault();
+    
+    const name =
+      this.querySelector('input[type="text"]').value;
+    
+    const email =
+      this.querySelector('input[type="email"]').value;
+    
+    const phone =
+      this.querySelector('input[type="tel"]').value;
+    
+    const subject =
+      this.querySelectorAll('input[type="text"]')[1].value;
+    
+    const message =
+      this.querySelector("textarea").value;
+    
+    const text =
+      `*New Website Enquiry*%0A%0A` +
+      `*Name:* ${name}%0A` +
+      `*Email:* ${email}%0A` +
+      `*Phone:* ${phone}%0A` +
+      `*Subject:* ${subject}%0A%0A` +
+      `*Message:*%0A${message}`;
+    
+    window.open(
+      
+      "https://wa.me/254729288984?text=" + text,
+      
+      "_blank"
+      
+    );
+    
+  });
+  
+}
+
