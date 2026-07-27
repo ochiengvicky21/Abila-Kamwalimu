@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | Abila Kamwalimu Hotel</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+<link rel="stylesheet"
+href="css/admin.css">
+
+<!--<script src="js/auth.js"></script>
+
+<script>
+
+requireAuth();
+
+</script>-->
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+<div class="sidebar-logo">
+
+<img src="../images/logo/logo.png">
+
+<h2>Abila</h2>
+
+<span>Hotel Admin</span>
+
+</div>
+
+<ul class="sidebar-menu">
+
+<li class="active">
+
+<a href="dashboard.html">
+
+<i class="fas fa-chart-line"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="orders.html">
+
+<i class="fas fa-utensils"></i>
+
+Orders
+
+</a>
+
+</li>
+
+<li>
+
+<a href="bookings.html">
+
+<i class="fas fa-calendar-check"></i>
+
+Bookings
+
+</a>
+
+</li>
+
+<li>
+
+<a href="conferences.html">
+
+<i class="fas fa-users"></i>
+
+Conference Requests
+
+</a>
+
+</li>
+
+<li>
+
+<a href="menu.html">
+
+<i class="fas fa-book-open"></i>
+
+Menu Manager
+
+</a>
+
+</li>
+
+<li>
+
+<a href="gallery.html">
+
+<i class="fas fa-images"></i>
+
+Gallery
+
+</a>
+
+</li>
+
+<li>
+
+<a href="events.html">
+
+<i class="fas fa-champagne-glasses"></i>
+
+Events
+
+</a>
+
+</li>
+
+<li>
+
+<a href="reports.html">
+
+<i class="fas fa-chart-pie"></i>
+
+Reports
+
+</a>
+
+</li>
+
+<li>
+
+<a href="settings.html">
+
+<i class="fas fa-gear"></i>
+
+Settings
+
+</a>
+
+</li>
+
+</ul>
+
+<div class="sidebar-footer">
+
+<button onclick="logout()">
+
+<i class="fas fa-right-from-bracket"></i>
+
+Logout
+
+</button>
+
+</div>
+
+</aside>
+
+<!-- ================= MAIN ================= -->
+
+<main class="main-content">
+
+<header class="topbar">
+
+<div>
+
+<h1>
+
+Dashboard
+
+</h1>
+
+<p>
+
+Welcome back, Administrator.
+
+</p>
+
+</div>
+
+<div class="topbar-right">
+
+<button>
+
+<i class="fas fa-bell"></i>
+
+</button>
+
+<button>
+
+<i class="fas fa-envelope"></i>
+
+</button>
+
+<img
+src="../images/logo/logo.png"
+class="profile-image">
+
+</div>
+
+</header>
+
+<!-- KPI cards will go here -->
+
+<section class="dashboard-content">
+  
+  <div class="stats-grid">
+    
+    <div class="stat-card">
+      
+      <div class="stat-icon revenue">
+        
+        <i class="fas fa-coins"></i>
+        
+      </div>
+      
+      <div>
+        
+        <h3 id="todayRevenue">KES 48,350</h3>
+        
+        <p>Today's Revenue</p>
+        
+      </div>
+      
+    </div>
+    
+    <div class="stat-card">
+      
+      <div class="stat-icon orders">
+        
+        <i class="fas fa-utensils"></i>
+        
+      </div>
+      
+      <div>
+        
+        <h3 id="todayOrders">42</h3>
+        
+        <p>Orders Today</p>
+        
+      </div>
+      
+    </div>
+    
+    <div class="stat-card">
+      
+      <div class="stat-icon conference">
+        
+        <i class="fas fa-users"></i>
+        
+      </div>
+      
+      <div>
+        
+        <h3 id="conferenceBookings">8</h3>
+        
+        <p>Conference Requests</p>
+        
+      </div>
+      
+    </div>
+    
+    <div class="stat-card">
+      
+      <div class="stat-icon visitors">
+        
+        <i class="fas fa-earth-africa"></i>
+        
+      </div>
+      
+      <div>
+        
+        <h3 id="websiteVisitors">736</h3>
+        
+        <p>Website Visitors</p>
+        
+      </div>
+      
+    </div>
+    
+</section>
+<section class="dashboard-grid">
+  
+  <div class="card large-card">
+    
+    <div class="card-header">
+      
+      <h2>
+        
+        Revenue Overview
+        
+      </h2>
+      
+      <button>
+      
+        This Month
+        
+      </button>
+      
+    </div>
+    
+    <div class="chart-container">
+  
+  <canvas id="salesChart"></canvas>
+  
+</div>
+<div class="card">
+  
+  <div class="card-header">
+    
+    <h2>Recent POS Sales</h2>
+    
+  </div>
+  
+  <div class="sales-list">
+    
+    <div class="sale-item">
+      
+      <div>
+        
+        <h4>Whole Tilapia</h4>
+        
+        <span>Table 7</span>
+        
+      </div>
+      
+      <strong>KES 950</strong>
+      
+    </div>
+    
+    <div class="sale-item">
+      
+      <div>
+        
+        <h4>Platter for Two</h4>
+        
+        <span>Take Away</span>
+        
+      </div>
+      
+      <strong>KES 1,200</strong>
+      
+    </div>
+    
+    <div class="sale-item">
+      
+      <div>
+        
+        <h4>Conference Lunch</h4>
+        
+        <span>Hall A</span>
+        
+      </div>
+      
+      <strong>KES 18,500</strong>
+      
+    </div>
+    
+    <div class="sale-item">
+      
+      <div>
+        
+        <h4>Breakfast</h4>
+        
+        <span>Room Service</span>
+        
+      </div>
+      
+      <strong>KES 450</strong>
+      
+    </div>
+    
+  </div>
+  
+</div>
+    
+  </div>
+  
+  
+  
+  <div class="card">
+    
+    <div class="card-header">
+      
+      <h2>
+        
+        Quick Actions
+        
+      </h2>
+      
+    </div>
+    
+    <div class="quick-actions">
+      
+      <a href="orders.html">
+      
+        <i class="fas fa-bowl-food"></i>
+        
+        New Order
+        
+      </a>
+      
+      <a href="menu.html">
+      
+        <i class="fas fa-book-open"></i>
+        
+        Edit Menu
+        
+      </a>
+      
+      <a href="gallery.html">
+      
+        <i class="fas fa-camera"></i>
+        
+        Upload Photo
+        
+      </a>
+      
+      <a href="events.html">
+      
+        <i class="fas fa-calendar-plus"></i>
+        
+        Create Event
+        
+      </a>
+      
+      <a href="reports.html">
+      
+        <i class="fas fa-file-lines"></i>
+        
+        Reports
+        
+      </a>
+      
+      <a href="settings.html">
+      
+        <i class="fas fa-gear"></i>
+        
+        Settings
+        
+      </a>
+      
+    </div>
+    
+  </div>
+  
+</section>
+<section class="dashboard-grid">
+  
+  <div class="card full-card">
+    
+    <div class="card-header">
+      
+      <h2>
+        
+        Latest Conference Requests
+        
+      </h2>
+      
+    </div>
+    
+    <table>
+      
+      <thead>
+        
+        <tr>
+          
+          <th>Reference</th>
+          
+          <th>Client</th>
+          
+          <th>Date</th>
+          
+          <th>Guests</th>
+          
+          <th>Status</th>
+          
+          <th>Action</th>
+          
+        </tr>
+        
+      </thead>
+      
+      <tbody>
+        
+        <tr>
+          
+          <td>CONF-1001</td>
+          
+          <td>County Government</td>
+          
+          <td>12 Aug</td>
+          
+          <td>120</td>
+          
+          <td>
+            
+            <span class="badge pending">
+            
+              Pending
+              
+            </span>
+            
+          </td>
+          
+          <td>
+            
+            <button class="table-btn">
+            
+              View
+              
+            </button>
+            
+          </td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td>CONF-1002</td>
+          
+          <td>Safaricom</td>
+          
+          <td>18 Aug</td>
+          
+          <td>80</td>
+          
+          <td>
+            
+            <span class="badge approved">
+            
+              Approved
+              
+            </span>
+            
+          </td>
+          
+          <td>
+            
+            <button class="table-btn">
+            
+              View
+              
+            </button>
+            
+          </td>
+          
+        </tr>
+        
+      </tbody>
+      <section class="dashboard-grid">
+  
+  <div class="card">
+    
+    <div class="card-header">
+      
+      <h2>Notifications</h2>
+      
+    </div>
+    
+    <div class="notification">
+      
+      <i class="fas fa-circle-check"></i>
+      
+      Conference CONF-1003 confirmed.
+      
+    </div>
+    
+    <div class="notification">
+      
+      <i class="fas fa-bell"></i>
+      
+      New website enquiry received.
+      
+    </div>
+    
+    <div class="notification">
+      
+      <i class="fas fa-triangle-exclamation"></i>
+      
+      Menu item "Whole Tilapia" is running low.
+      
+    </div>
+    
+  </div>
+  
+  <div class="card">
+    
+    <div class="card-header">
+      
+      <h2>Upcoming Events</h2>
+      
+    </div>
+    
+    <ul class="events-list">
+      
+      <li>Wedding Reception - Saturday</li>
+      
+      <li>Teachers Conference - Monday</li>
+      
+      <li>Church Seminar - Wednesday</li>
+      
+      <li>Corporate Training - Friday</li>
+      
+    </ul>
+    
+  </div>
+  
+</section>
+    </table>
+    
+  </div>
+  
+</section>
+
+</main>
+
+</div>
+
+<!--<script src="js/admin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/charts.js"></script>-->
+</body>
+
+</html>
