@@ -1495,3 +1495,94 @@ animation-duration:.7s;
 }
 
 }
+/*====================================================
+MOBILE NAVIGATION FIX
+======================================================*/
+
+@media (max-width:992px) {
+  
+  .mobile-menu {
+    
+    background: #0F172A !important;
+    
+    color: #fff;
+    
+  }
+  
+  .mobile-menu ul {
+    
+    margin: 0;
+    
+    padding: 0;
+    
+    list-style: none;
+    
+  }
+  
+  .mobile-menu li {
+    
+    margin: 0;
+    
+  }
+  
+  .mobile-menu a {
+    
+    display: block;
+    
+    padding: 16px 20px;
+    
+    color: #FFFFFF !important;
+    
+    font-size: 16px;
+    
+    font-weight: 600;
+    
+    text-decoration: none;
+    
+    border-radius: 12px;
+    
+    transition: .3s;
+    
+  }
+  
+  .mobile-menu a:hover,
+  
+  .mobile-menu a.active {
+    
+    background: #C9A227;
+    
+    color: #FFFFFF !important;
+    
+  }
+  
+  .close-menu {
+    
+    color: #FFFFFF;
+    
+    font-size: 28px;
+    
+    cursor: pointer;
+    
+  }
+  
+  .menu-toggle {
+    
+    color: #FFFFFF;
+    
+    font-size: 28px;
+    
+    cursor: pointer;
+    
+  }
+  
+  .mobile-menu .logo-text,
+  
+  .mobile-menu h2,
+  
+  .mobile-menu span {
+    
+    color: #FFFFFF;
+    
+  }
+  
+}
